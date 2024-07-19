@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+rootProject.name = 'AnyBuy'
+=======
+rootProject.name = 'MatchApp'
+>>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')

@@ -1,0 +1,101 @@
+{
+<<<<<<< HEAD
+    "//": "INTRO-PAGE",
+    "introTitle": "Water Scout",
+    "introTitle2": "Start your hydration journey today.",
+    "introButton": "Get Started",
+  
+    "//": "SIGNIN-PAGE",
+    "sign_Name": "What's your name?",
+    "sign_Gender": "What is your gender?",
+    "sign_Age": "How old are you?",
+    "sign_Height": "How tall are you?",
+    "sign_Weight": "What is your weight?",
+    "sign_Avatar": "Shall we choose your avatar?",
+    "signin_Button": "Continue",
+  
+    "yourname": "YOUR NAME",
+    "yourgender": "YOUR GENDER",
+    "yourage": "YOUR AGE",
+    "yourheight": "YOUR HEIGHT",
+    "yourweight": "YOUR WEIGHT",
+    "youravatar": "YOUR AVATAR",
+    "genderwoman": "Female",
+    "genderman": "Male",
+  
+    "enterage": "Enter your age",
+    "entername": "Enter your name",
+    "enterheight": "Enter your height",
+    "enterweight": "Enter your weight",
+  
+    "//": "MAIN-PAGE",
+    "mainTitle": "Hello,",
+  
+    "cardButton": "See more",
+  
+    "card1Title": "Cure-all",
+    "card1Text": "Water, vital for the survival of living organisms, sustains all biological life and activities. Only 3% of the Earth's water is freshwater sources, with the majority of these freshwater sources located in glaciers. As a biological solvent, water facilitates the transport and dissolution of vitamins and minerals in the body. Inadequate and unhealthy water consumption can lead to vital organ complications, including kidneys, as well as temperature imbalances, dry skin, indigestion, headaches, and forgetfulness.",
+  
+    "card2Title": "Prefer water over other beverages",
+    "card2Text": "A sufficient amount of water must be consumed for vital functions to be performed healthily. Drinking 8-9 glasses or 2-2.5 liters of water a day meets the body's water needs. For those who do not like the taste of water or experience nausea, sliced ​​fruit slices or vegetables such as cucumbers, celery, or carrots can be added to flavor water. Beverages like tea and coffee should not replace water as they increase water excretion from the body.",
+  
+    "card3Title": "Nourish your kidneys with water",
+    "card3Text": "While it is possible to live without food for days, one can only live without water for a few days. The most significant effect of inadequate water consumption is observed in kidneys nourished by water. Harmful substances such as urea, creatinine, and uric acid formed in the body are diluted with water and excreted from the kidneys. Insufficient water intake slows down urine flow, leading to urinary tract infections and, in progressive cases, kidney stones and kidney failure. Kidney diseases are the most common illnesses in countries where clean water sources are difficult to access, such as Africa.",
+  
+    "card4Title": "Protect yourself from heart diseases with water",
+    "card4Text": "There is a close relationship between heart diseases, especially heart attacks, and water. Research indicates a significant difference in heart attack incidence between those who pay attention to daily water consumption and those who do not. Dehydration causes blood to thicken and increases the tendency to clot. As a result, fluctuations in blood pressure, palpitations, arrhythmia, and heart failure can occur. Insufficient cardiac function can also have adverse effects on the liver and lungs.",
+  
+    "card5Title": "Keep water in your life against infectious diseases",
+    "card5Text": "Water plays an important role in daily hygiene. When the hygiene of the body and food is combined with the amount of water consumed for nutrition, humans need approximately 20 liters of clean water a day. Simply washing hands with water and soap creates a shield against many infectious diseases. In countries where clean water sources cannot be accessed, diseases such as typhoid and diarrhea can have deadly consequences. Water consumption is also important for building body resistance against infectious diseases like the flu.",
+  
+    "card6Title": "Drink water for radiant skin",
+    "card6Text": "The skin, the body's largest organ, requires water proportional to its size. When the circulatory system fails to provide enough water to the skin, or when there is insufficient water intake, the repair rate of the skin decreases due to decreased intracellular water. Daily water consumption should be observed for healthy, soft, moist, and ageless skin.",
+  
+    "card7Title": "Water boosts metabolism",
+    "card7Text": "The idea of losing fat by drinking water and urinating is not true. However, regular water consumption speeds up metabolism. Drinking calorie-free water regularly can lead to eating less. Drinking water upon waking up and before going to bed can create a feeling of fullness and indirectly help with weight loss. Additionally, water present in saliva and stomach secretions helps digest food.",
+  
+    "settingsText1": "Change Language",
+    "settingsText2": "Privacy Policy",
+    "settingsText3": "EULA",
+    "settingsText4": "Support",
+    "settingsText5": "Delete My Account",
+    "settingsTitle": "Settings",
+    "mainEdit": "Edit",
+  
+    "dailyGoalText": " Daily goal 3 Liters",
+    "litreText": "Liters",
+    "completedText": "Completed",
+  
+    "errorMessage": "Enter Username",
+    "errorMessage2": "Enter Your Age",
+    "errorMessage3": "Enter Your Height",
+    "errorMessage4": "Enter Your Weight",
+  
+      "recomend": "! I found an app called Hydro Mate. With this app, you can learn everything about your daily water intake. Click here to download it",
+      "url": "https://play.google.com/store/apps/details?id=com.anybuy.app&hl=tr&gl=US",
+  
+        "rateButton1": "Rate Us",
+        "rateButton2": "No Thanks",
+        "rateText": "Rating our app will help us provide the best service for you.",
+    
+        "ageLimitErrorMessage" : "Your age cannot be older than 130",
+        
+      "Language": "Language",
+      "rateus": "Rate Us",
+      "settingsRecomend": "Recommend Us",
+      "privacy": "Privacy and Security",
+      "eula": "Terms of Usage",
+  
+      "settingsLogout": "Log Out",
+      "logText": "Are you sure you want to log out?",
+      "giveup": "Cancel"
+  
+  }
+  
+=======
+    "errorMessage": "Enter Username",
+    "errorMessage2": "Enter Your About",
+    "errorMessage3": "Enter Your Height",
+    "errorMessage4": "Enter Your Weight"
+}
+>>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c

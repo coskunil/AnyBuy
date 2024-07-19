@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+<<<<<<<< HEAD:ios/AnyBuy.xcworkspace/contents.xcworkspacedata
+      location = "group:AnyBuy.xcodeproj">
+========
+      location = "group:MatchApp.xcodeproj">
+>>>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c:ios/MatchApp.xcworkspace/contents.xcworkspacedata
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
