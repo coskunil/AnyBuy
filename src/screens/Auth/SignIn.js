@@ -9,7 +9,6 @@ import {
   Image,
   StatusBar,
   ScrollView,
-<<<<<<< HEAD
   BackHandler,
 } from 'react-native';
 import {height, hp, RFValue, wp} from '../../helpers/responsive';
@@ -28,98 +27,16 @@ const SignIn = observer(({navigation: {navigate, goBack}}) => {
     phone: '',
   });
 
-=======
-} from 'react-native';
-import {height, hp, RFValue, wp} from '../../helpers/responsive';
-import {FONTS, images} from '../../constants';
-import store from '../../store/store';
-import Lang from '../../language';
-
-const SignIn = observer(({navigation: {navigate}}) => {
-  const [signIndex, setSignIndex] = useState(0);
-  const [textInput, setTextInput] = useState('');
-  const [name, setName] = useState('');
-  const [about, setAbout] = useState('');
-  const [height, setHeight] = useState('');
-  const [weight, setWeight] = useState('');
-  const [errors, setErrors] = useState({
-    name: '',
-    age: '',
-    height: '',
-    weight: '',
-    gender: '',
-  });
-
-  const validateInputs = () => {
-    const newErrors = {};
-    if (signIndex === 0 && !name) newErrors.name = Lang.errorMessage;
-    if (signIndex === 1 && !about) newErrors.about = Lang.errorMessage2;
-    if (signIndex === 2) {
-      if (!height) newErrors.height = Lang.errorMessage3;
-      if (!weight) newErrors.weight = Lang.errorMessage4;
-    }
-    setErrors(newErrors);
-    return Object.values(newErrors).every(error => error === '');
-  };
-
-  const DATA = [
-    {
-      id: 0,
-      title: "What's your name?",
-      description: 'Enter your name',
-      TextInput: setName,
-      placeHolder: 'Name',
-      value: {name},
-      errorMessage: 'Please enter your name',
-    },
-    {
-      id: 1,
-      title: 'Tell your about',
-      description: 'Tell something about yourself',
-      TextInput: setAbout,
-      placeHolder: 'About',
-      value: {about},
-      errorMessage: 'Please tell about yourself',
-    },
-    {
-      id: 2,
-      title: 'Tell your about',
-      description: 'Your weight ',
-      TextInput: setWeight,
-      placeHolder: 'Weight',
-      value: {weight},
-      errorMessage: 'Please enter your weight',
-      descriptionh: 'Your height',
-      TextInputh: setHeight,
-      placeHolderh: 'Height',
-      valueh: {height},
-      errorMessageh: 'Please enter your height',
-    },
-  ];
-
-  const userData = {
-    name,
-    about,
-    weight,
-    height,
-  };
-
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
   return (
     <View style={styles.container}>
       <StatusBar
         backgroundColor={'transparent'}
         translucent
-<<<<<<< HEAD
         barStyle={'dark-content'}
-=======
-        barStyle={'light-content'}
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
       />
       <ScrollView>
         {signIndex === 0 ? (
           <View>
-<<<<<<< HEAD
             <View
               style={{
                 flexDirection: 'row',
@@ -342,146 +259,6 @@ const SignIn = observer(({navigation: {navigate}}) => {
             </View>
           </View>
         )}
-=======
-            {/* <TouchableOpacity
-              onPress={() => {}}
-              style={styles.backTouchable}></TouchableOpacity> */}
-            <Text style={styles.oneTitle}>{DATA[signIndex].title}</Text>
-            <TextInput
-              style={styles.oneTextinput}
-              placeholder={DATA[signIndex].placeHolder}
-              placeholderTextColor={'black'}
-              onChangeText={text => {
-                setName(text);
-                setErrors(prevErrors => ({
-                  ...prevErrors,
-                  name: text.length === 0 ? Lang.errorMessage : '',
-                }));
-              }}
-              value={name}
-              maxLength={12}
-            />
-            {errors.name !== '' && (
-              <Text style={styles.messagetextName}>{errors.name}</Text>
-            )}
-          </View>
-        ) : signIndex === 1 ? (
-          <View>
-            <TouchableOpacity
-              onPress={() => {
-                setSignIndex(signIndex - 1);
-              }}
-              style={styles.backTouchable}>
-              <Image
-                source={images.leftback}
-                style={styles.leftIcon}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-            <Text style={styles.twoTitle}>{DATA[signIndex].title}</Text>
-            <TextInput
-              style={styles.twoTextinput}
-              placeholder={DATA[signIndex].placeHolder}
-              placeholderTextColor={'black'}
-              numberOfLines={5}
-              multiline={true}
-              onChangeText={text => {
-                setAbout(text);
-                setErrors(prevErrors => ({
-                  ...prevErrors,
-                  about: text.length === 0 ? Lang.errorMessage : '',
-                }));
-              }}
-              value={about}
-              maxLength={200}
-            />
-            {errors.about !== '' && (
-              <Text style={styles.messagetextAbout}>{errors.about}</Text>
-            )}
-          </View>
-        ) : (
-          <View>
-            <TouchableOpacity
-              onPress={() => {
-                setSignIndex(signIndex - 1);
-              }}
-              style={styles.backTouchable}>
-              <Image
-                source={images.leftback}
-                style={styles.leftIcon}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-            <Text style={styles.threeTitle}>{DATA[signIndex].title}</Text>
-
-            <Text style={styles.weightTitle}>
-              {DATA[signIndex].description}
-            </Text>
-            <TextInput
-              style={styles.weightTextinput}
-              placeholder={DATA[signIndex].placeHolder}
-              placeholderTextColor={'black'}
-              keyboardType="numeric"
-              onChangeText={text => {
-                setWeight(text);
-                setErrors(prevErrors => ({
-                  ...prevErrors,
-                  weight: text.length === 0 ? Lang.errorMessage : '',
-                }));
-              }}
-              value={weight}
-              maxLength={3}
-            />
-            {errors.weight !== '' && (
-              <Text style={styles.messagetextWeight}>{errors.weight}</Text>
-            )}
-
-            <Text style={styles.heightTitle}>
-              {DATA[signIndex].descriptionh}
-            </Text>
-            <TextInput
-              style={styles.heightTextinput}
-              placeholder={DATA[signIndex].placeHolderh}
-              placeholderTextColor={'black'}
-              keyboardType="numeric"
-              onChangeText={text => {
-                setHeight(text);
-                setErrors(prevErrors => ({
-                  ...prevErrors,
-                  height: text.length === 0 ? Lang.errorMessage : '',
-                }));
-              }}
-              value={height}
-              maxLength={3}
-            />
-            {errors.height !== '' && (
-              <Text style={styles.messagetextHeight}>{errors.height}</Text>
-            )}
-          </View>
-        )}
-
-        <TouchableOpacity
-          onPress={() => {
-            const isValid = validateInputs();
-            if (isValid) {
-              if (signIndex < 2) {
-                setSignIndex(signIndex + 1);
-              } else {
-                store.update('userData', {
-                  ...store.userData,
-                  ...userData,
-                });
-                console.log('data', store.userData);
-                navigate('Main');
-              }
-            }
-          }}
-          style={styles.continueTouchable}>
-          <Text style={styles.continueText}>
-            {signIndex === 2 ? 'Finish' : 'Continue'}
-          </Text>
-        </TouchableOpacity>
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
       </ScrollView>
     </View>
   );
@@ -489,7 +266,6 @@ const SignIn = observer(({navigation: {navigate}}) => {
 
 const styles = StyleSheet.create({
   container: {
-<<<<<<< HEAD
     alignItems: 'center',
     flex: 1,
     paddingTop: StatusBar.currentHeight * 2,
@@ -710,7 +486,6 @@ const styles = StyleSheet.create({
     fontSize: RFValue(12),
     textAlign: 'center',
     marginLeft: wp(2),
-=======
     backgroundColor: '#FDF7FD',
     flex: 1,
   },
@@ -875,7 +650,6 @@ const styles = StyleSheet.create({
     marginLeft: wp(9),
     position: 'absolute',
     marginTop: hp(46),
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
   },
 });
 

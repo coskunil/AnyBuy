@@ -24,19 +24,16 @@ class Store {
   completePersistLoading = false;
   introDone = false;
   userData = [];
-<<<<<<< HEAD
   RateModal = false;
   LogModal = false;
 
   deleteData = async () => {
     this.userData = []; // userData özelliğini temizle
   };
-=======
 
   // deleteData = async () => {
   //   this.userData = []; // userData özelliğini temizle
   // };
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
 
   // deleteData = async () => {
   //   this.userData = []; // userData özelliğini temizle
@@ -50,15 +47,13 @@ class Store {
         'isPremium',
         'introDone',
         'userData',
-<<<<<<< HEAD
         'RateModal',
         'LogModal',
-=======
         'name',
         'about',
         'height',
         'weight',
->>>>>>> a1fd2e5f014d7b480a17be55a2b819de1d1acd5c
+
       ],
       storage: AsyncStorage,
     });
